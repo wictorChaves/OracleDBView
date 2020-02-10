@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "oracledb-19ae3": {
+      "hosting": {
+        "OracleDBView": [
+          "oracledb-19ae3"
+        ]
+      }
+    }
+  }
+}
