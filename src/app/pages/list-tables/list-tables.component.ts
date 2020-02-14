@@ -8,6 +8,8 @@ import { AccordionHelper }   from '../../Helper/Accordion.helper';
 import { SearchFilter }      from './filter/search-filter';
 import { TablesService }     from 'src/app/services/tables.service';
 
+import 'firebase/firestore'
+
 @Component({
   selector   : 'app-list-tables',
   templateUrl: './list-tables.component.html',
