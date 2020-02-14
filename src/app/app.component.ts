@@ -9,18 +9,12 @@ import { auth }            from 'firebase/app';
 })
 export class AppComponent {
 
-  public title = 'OracleDBView';
+  title = 'CodeAndGoOracle';
 
-  constructor(public auth: AngularFireAuth) {
-    
-  }
+  constructor(public auth: AngularFireAuth) { }
 
   login() {
     this.auth.signInWithPopup(new auth.GoogleAuthProvider());
-  }
-
-  logout() {
-    this.auth.signOut();
   }
 
 }

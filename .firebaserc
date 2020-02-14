@@ -2,7 +2,7 @@
   "targets": {
     "oracledb-19ae3": {
       "hosting": {
-        "OracleDBView": [
+        "CodeAndGoOracle": [
           "oracledb-19ae3"
         ]
       }

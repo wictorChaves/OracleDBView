@@ -1,0 +1,24 @@
+{
+    "version"       : "0.2.0",
+    "configurations": [
+       {
+          "name"         : "Chrome Disable Web Security",
+          "type"         : "chrome",
+          "request"      : "launch",
+          "preLaunchTask": "npm: start",
+          "url"          : "http://localhost:4200",
+          "webRoot"      : "${workspaceFolder}",
+          "runtimeArgs"  : [
+             "--disable-web-security"
+          ]
+       },
+       {
+          "name"         : "Chrome",
+          "type"         : "chrome",
+          "request"      : "launch",
+          "preLaunchTask": "npm: start",
+          "url"          : "http://localhost:4200",
+          "webRoot"      : "${workspaceFolder}"
+       }
+    ]
+ }

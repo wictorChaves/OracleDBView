@@ -1,9 +1,12 @@
-<div *ngIf="auth.user | async as user; else showLogin">
-  <h1>Hello {{ user.displayName }}!</h1>
-  <button (click)="logout()">Logout</button>
-</div>
+<section *ngIf="auth.user | async as user; else showLogin">
+    <app-page></app-page>
+</section>
 <ng-template #showLogin>
-  <p>Please login.</p>
-  <button (click)="login()">Login with Google</button>
+    <main role="main" class="inner cover text-center">
+        <h1 class="cover-heading">Oracle DB</h1>
+        <p class="lead">Use your Google Account</p>
+        <p class="lead">
+            <button (click)="login()" class="btn btn-lg btn-secondary">Sign in</button>
+        </p>
+    </main>
 </ng-template>
-<router-outlet></router-outlet>

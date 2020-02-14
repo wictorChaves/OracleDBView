@@ -1,8 +1,8 @@
 {
   "hosting": [
     {
-      "target": "OracleDBView",
-      "public": "dist/OracleDBView",
+      "target": "CodeAndGoOracle",
+      "public": "dist/CodeAndGoOracle",
       "ignore": [
         "firebase.json",
         "**/.*",

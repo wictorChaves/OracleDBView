@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "OracleDBView": {
+    "CodeAndGoOracle": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,12 +13,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/OracleDBView",
+            "outputPath": "dist/CodeAndGoOracle",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -50,11 +49,6 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
                 }
               ]
             }
@@ -63,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "OracleDBView:build"
+            "browserTarget": "CodeAndGoOracle:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "OracleDBView:build:production"
+              "browserTarget": "CodeAndGoOracle:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "OracleDBView:build"
+            "browserTarget": "CodeAndGoOracle:build"
           }
         },
         "test": {
@@ -111,11 +105,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "OracleDBView:serve"
+            "devServerTarget": "CodeAndGoOracle:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "OracleDBView:serve:production"
+              "devServerTarget": "CodeAndGoOracle:serve:production"
             }
           }
         },
@@ -126,5 +120,5 @@
       }
     }
   },
-  "defaultProject": "OracleDBView"
+  "defaultProject": "CodeAndGoOracle"
 }

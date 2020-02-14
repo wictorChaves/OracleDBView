@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+.span-link {
+  color: #0f9aee;
+  cursor: pointer;
+}
+
+.span-link:hover {
+  text-decoration: none;
+  color: #0c7bbe;
+}
